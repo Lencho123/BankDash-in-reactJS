@@ -1,0 +1,89 @@
+.master-card{
+    background:#dff5f6;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1rem;
+}
+.card{
+    background-color: white;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1rem;
+}
+.user-card{
+    display: flex;
+    gap: 10px;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.user-card .user img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    padding-top: -15px;
+}
+.user-card .user h3{
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+    padding: 0;    
+    margin: 0;
+}
+.user-card .user h4{
+    font-size: 14px;
+    color: rgb(151, 194, 237);
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+
+.card-form{
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+}
+.card-form p{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+.card-form p{
+    color: gray;
+    margin-right: 1rem;
+}
+.card-input{
+    display: flex;
+    align-items: center;
+    background:#dff5f6;
+    border-radius: 25px;
+}
+.card-input button{
+    background-color: blue;
+    color: #fff;
+    border-radius: 25px;
+}
+.card-input button{
+    display: flex;
+    align-items: center;
+    border: none;
+    height: 100%;
+}
+.card-input input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0 0.5rem;
+}
+.card-input:focus-within{
+    border: 1px solid #4ff6ff;
+}

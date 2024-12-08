@@ -1,0 +1,20 @@
+
+.alltransaction{
+    display: flex;
+    flex-direction: column;
+}
+.alltransaction1{
+    display: flex;
+    flex-direction: row;
+}
+.linkt{
+    color: gray;
+    margin: 0 1.5rem;
+    cursor: pointer;
+    padding-bottom: 0;
+    text-decoration: none;
+}
+.activep{
+    color: blueviolet;
+    border-bottom: 2px solid blueviolet;
+}

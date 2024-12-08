@@ -1,0 +1,14 @@
+
+.mid-card{
+    flex-basis: 33%;
+}
+
+.row1,.row3{
+    display: flex;
+    justify-content: space-between;
+}
+.mid-card p,.mid-card h3, .mid-card h4{
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5rem;
+}

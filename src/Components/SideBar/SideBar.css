@@ -1,0 +1,22 @@
+.sidebar{
+    flex-basis: 25%;
+    background: #fff;
+    font-weight: 200;
+    color: gray;
+    overflow-y: auto;
+    position: sticky;
+    top: 4rem;
+}
+
+.li{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    align-items: center;
+    gap: 1rem;
+    color: gray;
+}
+.active{
+    color: blue;
+}

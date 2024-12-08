@@ -1,0 +1,24 @@
+table{
+    background-color: white;
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+th{
+    text-align: left;
+    padding: 0.5rem;
+}
+td{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px rgb(201, 195, 195) solid;
+}
+.button{
+    background: transparent;
+    border: 2px blueviolet solid;
+    border-radius: 10rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: blueviolet;
+}

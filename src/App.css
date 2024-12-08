@@ -1,0 +1,16 @@
+.app{
+  background-color: #dff5f6;
+  position: relative;
+}
+.main{
+  display: grid;
+  position: relative;
+  grid-template-columns: 0.25fr 0.75fr;
+  gap: 1.5rem;
+}
+.mside{
+  background-color: #fff;
+}
+.routes{
+  margin: 1rem 2rem;
+}
