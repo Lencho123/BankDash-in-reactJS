@@ -11,6 +11,7 @@ import AllTransaction from "./Components/AllTransaction/AllTransaction.jsx";
 import NoHistory from "./Components/NoHistory/NoHistory.jsx";
 import Account from "./Pages/Account/Account.jsx";
 import Investment from "./Pages/Investment/Investment.jsx";
+import CreditCard from "./Pages/CreditCard/CreditCard.jsx";
 
 function App() {
   const [curPage, setCurPage] = useState("Overview");
@@ -24,16 +25,16 @@ function App() {
           </div>
           <div className="routes">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/BankDash-in-reactJS" element={<Home />} />
               <Route path="/transaction" element={<Transactions />}>
-                <Route path="alltransaction" element={<AllTransaction/>} />
-                <Route path="nohistory" element={<NoHistory/>} />
+                <Route path="alltransaction" element={<AllTransaction />} />
+                <Route path="nohistory" element={<NoHistory />} />
                 <Route path="nohistory" element={<NoHistory />} />
               </Route>
-              <Route path="/account" element={<Account/>} />
+              <Route path="/account" element={<Account />} />
               <Route path="/investment" element={<Investment />} />
-          {/* <Route path="/credit-card" element={<CreditCard />} />
-          <Route path="/loan" element={<Loan />} />
+              <Route path="/creditcard" element={<CreditCard/>} />
+              {/* <Route path="/loan" element={<Loan />} />
           <Route path="/service" element={<Service />} />
           <Route path="/my-privilage" element={<MyPrivilage />} />
           <Route path="/setting" element={<Setting />} /> */}
