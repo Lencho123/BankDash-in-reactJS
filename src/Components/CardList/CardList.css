@@ -1,0 +1,19 @@
+.card-list{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0.4rem;
+}
+.card-list p{
+    color: dimgray;
+    padding: 0;
+    margin-top: 2px;
+}
+p{
+    font-size: 13px;
+}
