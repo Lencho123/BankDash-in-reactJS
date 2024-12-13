@@ -162,3 +162,65 @@ export const lastTransaction=[
         balance:"-$150"
     }
 ]
+
+export const loanOverview=[
+    {   slNo:"slNo",
+        loanMoney:"loanMoney",
+        leftToReplay:"leftToReplay",
+        duration:"duration",
+        interestRate:"interestRate",
+        installment:"installment",
+        button:"Replay"
+    },
+    {   slNo:"01",
+        loanMoney:"&100,000",
+        leftToReplay:"$45,00",
+        duration:"8 Months",
+        interestRate:"12%",
+        installment:"$2,00 / month",
+        button:"Replay"
+    },{   slNo:"02",
+        loanMoney:"&100,000",
+        leftToReplay:"$45,00",
+        duration:"8 Months",
+        interestRate:"12%",
+        installment:"$2,00 / month",
+        button:"Replay"
+    },{   slNo:"03",
+        loanMoney:"&100,000",
+        leftToReplay:"$45,00",
+        duration:"8 Months",
+        interestRate:"12%",
+        installment:"$2,00 / month",
+        button:"Replay"
+    },{   slNo:"04",
+        loanMoney:"&100,000",
+        leftToReplay:"$45,00",
+        duration:"8 Months",
+        interestRate:"12%",
+        installment:"$2,00 / month",
+        button:"Replay"
+    },{   slNo:"05",
+        loanMoney:"&100,000",
+        leftToReplay:"$45,00",
+        duration:"8 Months",
+        interestRate:"12%",
+        installment:"$2,00 / month",
+        button:"Replay"
+    },{   slNo:"07",
+        loanMoney:"&100,000",
+        leftToReplay:"$45,00",
+        duration:"8 Months",
+        interestRate:"12%",
+        installment:"$2,00 / month",
+        button:"Replay"
+    },
+    {   slNo:"Total",
+        loanMoney:"&100,000",
+        leftToReplay:"$45,00",
+        duration:"",
+        interestRate:"",
+        installment:"$50,000 / month",
+        button:""
+    }
+]

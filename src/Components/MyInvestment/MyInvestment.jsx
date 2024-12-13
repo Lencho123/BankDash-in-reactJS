@@ -5,7 +5,7 @@ import investment_card3 from "../../assets/investment_card3.png";
 
 function MyInvestment() {
   return (
-    <div style={{display:"flex", gap:"1.5rem", alignItems:"center"}}>
+    <div className="my-investment" style={{display:"flex", gap:"1.5rem", alignItems:"center"}}>
       <div style={{ display: "flex", flexDirection: "column", gap: "1rem", flexBasis:"60%"}}>
         <div
           style={{
@@ -167,7 +167,7 @@ function MyInvestment() {
           </div>
         </div>
       </div>
-      <img width="40%" src={investment_card3}/>
+      <img className="my-investment-img" src={investment_card3}/>
     </div>
   );
 }

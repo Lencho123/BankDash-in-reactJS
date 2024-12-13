@@ -1,0 +1,13 @@
+.my-investment-img {
+  width: 40%;
+}
+
+@media screen and (max-width: 720px) {
+  .my-investment {
+    display: flex;
+    flex-direction: column;
+  }
+  .my-investment-img{
+    width: 100%;
+  }
+}

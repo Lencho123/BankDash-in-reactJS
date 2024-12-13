@@ -1,0 +1,12 @@
+.clicked{
+    color: blueviolet;
+    border-bottom: 2px solid blueviolet;
+}
+.not-clicked{
+    color: gray;
+    cursor: pointer;
+    padding-bottom: 0;
+}
+.setting-link{
+    text-decoration: none;
+}

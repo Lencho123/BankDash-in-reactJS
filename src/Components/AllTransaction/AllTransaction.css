@@ -22,3 +22,6 @@ td{
     padding: 0.5rem 1rem;
     color: blueviolet;
 }
+.small-screen{
+    display: none;
+}

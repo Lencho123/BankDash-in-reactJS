@@ -11,21 +11,45 @@ import { midCardStyle } from "../../Styles/midCardStyle";
 function Home() {
   return (
     <div className="home">
-      <div style={{display:"flex", gap:"1.5rem",}}>
-        <MidCard leftSpan="My Card" cardStyle={midCardStyle.blue}/>
-        <MidCard rightSpan="See all" cardStyle={midCardStyle.white}/>
-        <img style={{width:"19rem", flexBasis:"33%"}}
-        src={home_card2} />
+      <div className="hmid-card">
+        <MidCard leftSpan="My Card" cardStyle={midCardStyle.blue} />
+        <MidCard rightSpan="See all" cardStyle={midCardStyle.white} />
+
+        <div style={{ flexBasis: "33%" }}>
+          <img
+            className="large-screen"
+            style={{ width: "100%" }}
+            src={home_card2}
+          />
+        </div>
       </div>
+
+      <div >
+        <img
+          className="small-screen"
+          style={{ width: "100%" }}
+          src={home_card2}
+        />
+      </div>
+
       <div className="home-section-1">
-        <img src={home_card3} />
-        <img src={home_card4} />
+        <div className="himage1">
+          <img width="100%" src={home_card3} />
+        </div>
+        <div className="himage2">
+          <img width="100%" src={home_card4} />
+        </div>
       </div>
-      <div className="home-section-2">
-        <div className="tcard">
+      <div
+        className="home-section-2"
+        style={{ display: "flex", gap: "1.5rem" }}
+      >
+        <div className="tcard" style={{ flexBasis: "40%" }}>
           <QuickTransfer />
         </div>
-        <img src={home_card5} />
+        <div style={{ flexBasis: "60%" }}>
+          <img width="100%" src={home_card5} />
+        </div>
       </div>
     </div>
   );

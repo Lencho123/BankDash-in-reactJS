@@ -55,13 +55,17 @@ function Account() {
           }}
         />
       </div>
-      <div style={{ display: "flex", gap: "1.5rem", marginTop: "1.5rem" }}>
-        <LastTransaction />
-        <MidCard
-          cardStyle={midCardStyle.blue}
-          leftSpan="My Card"
-          rightSpan=""
-        />
+      <div className="account-section-2">
+        <div>
+          <LastTransaction />
+        </div>
+        <div className="account-section-2-div-1">
+          <MidCard
+            cardStyle={midCardStyle.blue}
+            leftSpan="My Card"
+            rightSpan=""
+          />
+        </div>
       </div>
     </div>
   );

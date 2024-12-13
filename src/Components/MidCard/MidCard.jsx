@@ -4,7 +4,7 @@ import { IdCard, Save } from "lucide-react";
 function MidCard({ leftSpan, rightSpan, cardStyle }) {
   return (
     <div className="mid-card">
-      <div style={{display:'flex', justifyContent:'space-between'}}>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
         <span>{leftSpan}</span>
         <span>{rightSpan}</span>
       </div>

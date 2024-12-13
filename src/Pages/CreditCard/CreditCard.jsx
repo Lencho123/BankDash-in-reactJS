@@ -34,34 +34,54 @@ const cardListData = [
 
 function CreditCard() {
   return (
-    <div>
-      <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
-        <MidCard leftSpan="My Card" cardStyle={midCardStyle.lightblue} />
-        <MidCard cardStyle={midCardStyle.blue} />
-        <MidCard cardStyle={midCardStyle.white} />
+    <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+      <div className="credit-card-mid-card">
+        <div className="credit-card-mid-card-each">
+          <MidCard leftSpan="My Card" cardStyle={midCardStyle.lightblue} />
+        </div>
+        <div className="credit-card-mid-card-each">
+          <MidCard cardStyle={midCardStyle.blue} />
+        </div>
+        <div className="credit-card-mid-card-each">
+          <MidCard cardStyle={midCardStyle.white} />
+        </div>
       </div>
-      <div style={{ display: "flex", gap: "1.5rem" }}>
-        <img className="img" width="34%" src={creditcard_card1} />
-        <div style={{ flexBasis: "66%" }}>
-          <h4>Card List</h4>
-          {cardListData.map((data) => (
-            <CardList
-              icon={data.icon}
-              cardtype={data.cardtype}
-              bank={data.bank}
-              cardnumber={data.cardnumber}
-              namaincard={data.namaincard}
-            />
-          ))}
+      <div className="credit-card-card-list">
+        <div className="credit-card-card-list-img">
+          <img width="100%" src={creditcard_card1} />
+        </div>
+
+        <div className="credit-card-card-list-lists">
+          <div className="credit-card-card-list-lists-h4">
+            <h4>Card List</h4>
+          </div>
+          <div className="credit-card-card-list-lists-row">
+            {cardListData.map((data) => (
+              <CardList
+                icon={data.icon}
+                cardtype={data.cardtype}
+                bank={data.bank}
+                cardnumber={data.cardnumber}
+                namaincard={data.namaincard}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
-      <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
-        <div style={{ flexBasis: "60%" }}>
-          <h3 style={{margin:"0", marginBottom:"1rem", fontWeight:"500"}}>Add New Card</h3>
-          <AddNewCardForm />
+      <div className="credit-card-section-2">
+        <div className="credit-card-add-new-card">
+          <h3 style={{ margin: "0", marginBottom: "1rem", fontWeight: "500" }}>
+            Add New Card
+          </h3>
+          <div className="add-new-card-form-section">
+            <AddNewCardForm />
+          </div>
         </div>
-        <img style={{maxHeight:"20rem"}} width="40%" src={creditcard_card2} />
+
+        <div className="credit-card-section-2-img">
+          <img width="100%" src={creditcard_card2} />
+        </div>
       </div>
     </div>
   );

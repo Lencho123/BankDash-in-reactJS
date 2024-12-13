@@ -4,31 +4,34 @@
   gap: 1.5rem;
   overflow: auto;
 }
-.home-section-1{
-  flex-basis: 100%;
-  display: grid;
-  grid-template-columns: 0.6fr 0.4fr;
-  gap:1.5rem;
-
+.home-section-1 {
+  display: flex;
+  gap: 1.5rem;
 }
-.home-section-1 img{
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+.himage1 {
+  flex-basis: 60%;
 }
-.home-section-2{
-  flex-basis: 100%;
-  display: grid;
-  align-items: center;
-  column-gap:  1.5rem;
-  grid-template-columns: 0.4fr 0.6fr;
-}
-.tcard{
+.himage2 {
   flex-basis: 40%;
 }
-.home-section-2 img{
-  flex-basis: 60%;
-  width: 165%;
-  height: 100%;
-  object-fit: fill;
+.hmid-card {
+  display: flex;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 720px) {
+  .home-section-1 {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 1rem;
+  }
+  .hmid-card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .home-section-2 {
+    display: flex;
+    flex-direction: column;
+  }
 }

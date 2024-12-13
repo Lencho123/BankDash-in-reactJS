@@ -1,0 +1,15 @@
+.pair{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.pair h4, .pair p{
+    margin: 0;
+    padding: 0;
+}
+.pair p{
+  color: dimgray;
+}
+.pair h4{
+    font-weight: 400;
+}

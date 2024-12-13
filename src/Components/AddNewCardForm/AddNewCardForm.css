@@ -1,8 +1,8 @@
-form label{
+.add-new-form-label{
     flex-basis: 50%;
     margin-right: 10%;
 }
-form input{
+.add-new-form-input{
     width: 100%;
     padding: 0.7rem;
     border-radius: 10px;

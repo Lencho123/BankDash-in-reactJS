@@ -1,8 +1,4 @@
 
-.mid-card{
-    flex-basis: 33%;
-}
-
 .row1,.row3{
     display: flex;
     justify-content: space-between;

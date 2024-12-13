@@ -1,77 +1,92 @@
-.navbar{
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.left h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.left h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  background-color: #dff5f6;
+  padding: 10px 12px;
+  border-radius: 20px;
+  height: 2rem;
+}
+
+.input input {
+  background: transparent;
+  border: none;
+}
+.input:focus-within {
+  border: #4ff6ff 1px solid;
+}
+.input input:focus {
+  border: none;
+  outline: none;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 7px;
+  background: #dff5f6;
+  border-radius: 50%;
+  margin-left: 1.5rem;
+}
+
+.right img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.small-nav {
+  display: none;
+}
+/* For small devices */
+.menu{
+  border: none;
+  background-color: transparent;
+}
+@media screen and (max-width: 720px) {
+  .left {
+    display:none;
+  }
+  .right {
+    display: none;
+  }
+  .small-nav {
     display: flex;
-    justify-content: space-between;
-    background: #fff;
-    height: 4rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    
+    flex-direction: column;
+    width:100vw;
+  }
 }
-.left{
-    display: flex;
-    align-items: center;
-    gap: 7.5rem;
-}
-
-.left h1{
-    font-size: 20px;
-    font-weight: 800;
-}
-.left h2{
-    font-size: 20px;
-    font-weight: 500;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.right{
-    display: flex;
-    align-items: center;
-}
-
-.input{
-    display: flex;
-    align-items: center;
-    background-color: #dff5f6;
-    padding: 10px 12px;
-    border-radius: 20px;
-    height: 2rem;
-
-}
-
-.input input{
-    background:transparent;
-    border: none;
-    
-}
-.input:focus-within{
-    border: #4ff6ff 1px solid;
-}
-.input input:focus{
-    border:none;
-    outline: none;
-}
-
-.icon{
-    width: 2rem;
-    height: 2rem;
-    padding: 7px;
-    background: #dff5f6;
-    border-radius: 50%;
-    margin-left:1.5rem;
-}
-
-.right img{
-    width: 2rem;
-    height: 2rem;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 1.5rem;
-}
-.icon:hover{
-    cursor: pointer;
-} 

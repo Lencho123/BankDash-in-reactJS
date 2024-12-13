@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import "./NavBar.css";
-import { Bell, Search, Settings, Wallet } from "lucide-react";
+import { Bell, Menu, Search, Settings, Wallet } from "lucide-react";
 import profile from "../../assets/profile.png";
-import {SideBarContex} from '../../Context/SideBarProvider';
-
+import { SideBarContex } from "../../Context/SideBarProvider";
 
 function NavBar() {
-  const value = useContext(SideBarContex)
-  const curPage=value.curPage
+  const value = useContext(SideBarContex);
+  const curPage = value.curPage;
+  const setShowSide = value.setShowSide;
   return (
     <div className="navbar">
       <div className="left">
@@ -17,13 +17,47 @@ function NavBar() {
         </div>
         <h2>{curPage}</h2>
       </div>
-      <div className="right">
-        <div className="input">
-          <Search />
-          <input type="search" placeholder="Search for something" />
+
+      <div className="small-nav">
+        <div
+          className="small-top"
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <button  className="menu"
+          onClick={()=>setShowSide(true)}>
+            <Menu />
+          </button>
+          <h4>{curPage}</h4>
+          <img src={profile} width="25px" style={{ borderRadius: "50%" }} />
         </div>
-        <Settings className="icon"/>
-        <Bell className="icon"/>
+
+        <div
+          className="small-search"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginBottom: "1rem",
+          }}
+        >
+          <div className="input" style={{ width: "100%" }}>
+            <Search />
+            <input type="search" placeholder="Search for something" />
+          </div>
+        </div>
+      </div>
+
+      <div className="right">
+        <label htmlFor="search" className="input">
+          <Search />
+          <input id="search" type="search" placeholder="Search for something" />
+        </label>
+        <Settings className="icon" />
+        <Bell className="icon" />
         <img src={profile} width="25px" />
       </div>
     </div>

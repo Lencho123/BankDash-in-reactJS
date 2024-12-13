@@ -1,11 +1,11 @@
-import React from 'react'
-import './AllTransaction.css'
+import React from "react";
+import "./AllTransaction.css";
 import { transactions } from "../../Data.js";
-
 
 function AllTransaction() {
   return (
-    <table>
+    <>
+      <table className="large-screen">
         {transactions.map((row) =>
           row.description === "description" ? (
             <tr>
@@ -32,7 +32,42 @@ function AllTransaction() {
           )
         )}
       </table>
-  )
+
+      {/* for small screen */}
+      <div
+        className="small-screen"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          backgroundColor: "white",
+          borderRadius: "20px",
+        }}
+      >
+        {transactions.map((row) =>
+          row.description === "description" ? (
+            <></>
+          ) : (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                borderBottom: "1px solid lightgray",
+                padding: "0 1rem",
+              }}
+            >
+              <div>
+                <p>{row.icon + row.description}</p>
+                <p style={{ marginLeft: "1.5rem" }}>{row.date}</p>
+              </div>
+              <div>
+                <h5>{row.ammount}</h5>
+              </div>
+            </div>
+          )
+        )}
+      </div>
+    </>
+  );
 }
 
-export default AllTransaction
+export default AllTransaction;
