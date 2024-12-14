@@ -1,45 +1,44 @@
-.investment-small-card{
-    display: flex;
-    gap: 1.5rem;    
+.investment-small-card {
+  display: flex;
+  gap: 1.5rem;
 }
 
-.investment-graph{
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+.investment-graph {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
-.inline-block{
-    flex-basis: 33%;
-    
+.inline-block {
+  flex-basis: 33%;
 }
 @media screen and (max-width: 720px) {
-    .investment-small-card{
-        display: flex;
-        flex-direction: column;
-        width: 85vw;
-    }
-    .investment-graph{
-        display: flex;
-        flex-direction: column;
-    }
-    .investment{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    .inline-block{
-        flex-basis: 100%;
-    }
-    .investment-graph img{
-        width: 100%;
-    }
-    .investment-graph{
-        width: 85vw;
-    }
-    .i-my-investment{
-        width: 80vw;
-    }
-    .i-my-investment div{
-        width: 100%;
-    }
+  .investment-small-card {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+  .investment-graph {
+    display: flex;
+    flex-direction: column;
+  }
+  .investment {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .inline-block {
+    flex-basis: 100%;
+  }
+  .investment-graph img {
+    width: 100%;
+  }
+  .investment-graph {
+    width: 80vw;
+  }
+  .i-my-investment {
+    width: 80vw;
+  }
+  .i-my-investment div {
+    width: 100%;
+  }
 }

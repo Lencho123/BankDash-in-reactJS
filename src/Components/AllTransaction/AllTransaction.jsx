@@ -36,12 +36,6 @@ function AllTransaction() {
       {/* for small screen */}
       <div
         className="small-screen"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          backgroundColor: "white",
-          borderRadius: "20px",
-        }}
       >
         {transactions.map((row) =>
           row.description === "description" ? (
@@ -60,7 +54,7 @@ function AllTransaction() {
                 <p style={{ marginLeft: "1.5rem" }}>{row.date}</p>
               </div>
               <div>
-                <h5>{row.ammount}</h5>
+                <h5 style={{color:"lightgreen"}}>{row.ammount}</h5>
               </div>
             </div>
           )

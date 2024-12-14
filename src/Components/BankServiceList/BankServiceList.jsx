@@ -12,31 +12,22 @@ function BankServiceList({
 }) {
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        backgroundColor: "white",
-        borderRadius: "10px",
-        padding: "0.8rem",
-        marginTop: "1rem",
-      }}
+      className="bank-service-list"
     >
       <div style={iconStyle}>{icon}</div>
-      <div className="pair">
+      <div className="pair ">
         <h4>{pair1.name}</h4>
         <p>{pair1.value}</p>
       </div>
-      <div className="pair">
+      <div className="pair large-screen">
         <h4>{pair2.name}</h4>
         <p>{pair2.value}</p>
       </div>
-      <div className="pair">
+      <div className="pair large-screen">
         <h4>{pair3.name}</h4>
         <p>{pair3.value}</p>
       </div>
-      <div className="pair">
+      <div className="pair large-screen">
         <h4>{pair4.name}</h4>
         <p>{pair4.value}</p>
       </div>

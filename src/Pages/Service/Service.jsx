@@ -1,4 +1,5 @@
 import React from "react";
+import './Service.css';
 import { CheckCircle2, LifeBuoy, ShoppingBag } from "lucide-react";
 import SmallCardServide from "../../Components/SmallCardService/SmallCardServide";
 import BankServiceList from "../../Components/BankServiceList/BankServiceList";

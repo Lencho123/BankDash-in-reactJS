@@ -1,0 +1,9 @@
+
+
+@media screen and (max-width:720px) {
+    .asmallcards{
+        display: flex;
+        width: 80vw;
+        overflow-x: hidden;
+    }
+}

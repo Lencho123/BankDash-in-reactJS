@@ -36,15 +36,11 @@ function CreditCard() {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
       <div className="credit-card-mid-card">
-        <div className="credit-card-mid-card-each">
-          <MidCard leftSpan="My Card" cardStyle={midCardStyle.lightblue} />
-        </div>
-        <div className="credit-card-mid-card-each">
-          <MidCard cardStyle={midCardStyle.blue} />
-        </div>
-        <div className="credit-card-mid-card-each">
-          <MidCard cardStyle={midCardStyle.white} />
-        </div>
+        <MidCard leftSpan="My Card" cardStyle={midCardStyle.lightblue} />
+
+        <MidCard cardStyle={midCardStyle.blue} />
+
+        <MidCard cardStyle={midCardStyle.white} />
       </div>
       <div className="credit-card-card-list">
         <div className="credit-card-card-list-img">

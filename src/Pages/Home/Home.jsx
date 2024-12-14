@@ -24,9 +24,8 @@ function Home() {
         </div>
       </div>
 
-      <div >
+      <div className=" small-screen on-small-screen-image" >
         <img
-          className="small-screen"
           style={{ width: "100%" }}
           src={home_card2}
         />
@@ -42,7 +41,6 @@ function Home() {
       </div>
       <div
         className="home-section-2"
-        style={{ display: "flex", gap: "1.5rem" }}
       >
         <div className="tcard" style={{ flexBasis: "40%" }}>
           <QuickTransfer />

@@ -35,8 +35,8 @@ function Security() {
           Password
           <br />
           <input
-            style={{ maxWidth: "60%" }}
-            className="profile-input"
+            
+            className="security-profile-input"
             type="password"
             id="password"
             placeholder="***********"
@@ -44,13 +44,13 @@ function Security() {
         </label>
       </div>
 
-      <div>
+      <div >
         <label htmlFor="password">
           Password
           <br />
           <input
-            style={{ maxWidth: "60%" }}
-            className="profile-input"
+            
+            className="security-profile-input"
             type="password"
             id="password"
             placeholder="***********"

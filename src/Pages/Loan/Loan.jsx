@@ -58,26 +58,26 @@ function Loan() {
       >
         Active Loan Overview
       </h3>
-      <table>
+      <table className="active-loan-table">
         {loanOverview.map((row) =>
           row.slNo === "slNo" ? (
             <tr>
-              <th>{row.slNo}</th>
-              <th>{row.loanMoney}</th>
-              <th>{row.leftToReplay}</th>
-              <th>{row.duration}</th>
-              <th>{row.interestRate}</th>
-              <th>{row.installment}</th>
+              <th className="large-screen">{row.slNo}</th>
+              <th >{row.loanMoney}</th>
+              <th >{row.leftToReplay}</th>
+              <th className="large-screen">{row.duration}</th>
+              <th className="large-screen">{row.interestRate}</th>
+              <th className="large-screen">{row.installment}</th>
               <th>{row.button}</th>
             </tr>
           ) : (
             <tr>
-              <td>{row.slNo}</td>
+              <td className="large-screen">{row.slNo}</td>
               <td>{row.loanMoney}</td>
               <td>{row.leftToReplay}</td>
-              <td>{row.duration}</td>
-              <td>{row.interestRate}</td>
-              <td>{row.installment}</td>
+              <td className="large-screen">{row.duration}</td>
+              <td className="large-screen">{row.interestRate}</td>
+              <td className="large-screen">{row.installment}</td>
               <td>
                 <button className="button">Replay</button>
               </td>

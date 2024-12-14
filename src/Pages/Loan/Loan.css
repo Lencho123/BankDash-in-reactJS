@@ -1,0 +1,15 @@
+/* 
+.small-screen{
+    display:none;
+} */
+
+@media screen and (max-width:720px) {
+    .asmallcards{
+        display: flex;
+        width: 89vw;
+        overflow-x: hidden;
+    }
+    .active-loan-table{
+        width: 80vw;
+    }
+}

@@ -41,10 +41,6 @@
     display: flex;
     flex-direction: column;
   }
-  .t-midcard {
-    flex-basis: 100%;
-    width: 80vw;
-  }
   .transction_card1 img {
     width: 100%;
   }

@@ -1,3 +1,14 @@
+.bank-service-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin-top: 1rem;
+}
+
 .pair{
     display: flex;
     flex-direction: column;
@@ -12,4 +23,12 @@
 }
 .pair h4{
     font-weight: 400;
+}
+@media screen and (max-width:720px) {
+    .large-screen{
+        display: none;
+    }
+    .bank-service-list{
+        font-size: 15px;
+    }
 }

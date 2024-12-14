@@ -25,3 +25,12 @@ td{
 .small-screen{
     display: none;
 }
+@media screen and (max-width:720px) {
+    .small-screen{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px;
+        margin-right: 1.5rem;
+    }
+}
