@@ -1,0 +1,35 @@
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dff5f6;
+
+}
+.landing-card{
+    background-color: rgb(110, 231, 240);
+    box-shadow: rgb(41, 69, 71) 10px 10px 8px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.landing-card h2{
+    padding: 1rem;
+    padding-bottom: 0;
+}
+.login-signUp{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.login-signUp button{
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+.landing-card:hover{
+    box-shadow: rgb(20, 33, 33) 10px 10px 8px;
+    transform: translateY(-1px);
+}

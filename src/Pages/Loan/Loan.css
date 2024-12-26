@@ -2,14 +2,21 @@
 .small-screen{
     display:none;
 } */
-
+.loan-h3{
+    margin-bottom: -1rem;
+}
 @media screen and (max-width:720px) {
     .asmallcards{
         display: flex;
         width: 89vw;
         overflow-x: hidden;
+        margin:auto;
     }
     .active-loan-table{
         width: 80vw;
+        margin: auto;
+    }
+    .loan-h3{
+        margin-bottom: 1rem;
     }
 }

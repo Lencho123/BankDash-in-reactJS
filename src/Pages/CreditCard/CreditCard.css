@@ -32,11 +32,13 @@
     width: 80vw;
     overflow-x: hidden;
     gap: 1rem;
+    margin: auto;
   }
   .credit-card-card-list{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin:auto;
   }
   .credit-card-card-list-img{
     width: 80vw;

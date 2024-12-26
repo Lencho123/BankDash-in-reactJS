@@ -8,8 +8,8 @@ function Setting() {
     setClicked(val);
   };
   return (
-    <div>
-      <div
+    <div className="setting">
+      <div 
         style={{
           display: "flex",
           gap: "2rem",
@@ -49,7 +49,7 @@ function Setting() {
           </p>
         </Link>
       </div>
-      <Outlet />
+        <Outlet />
     </div>
   );
 }

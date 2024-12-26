@@ -16,10 +16,12 @@
     display: flex;
     flex-direction: column;
     width: 80vw;
+    margin:auto;
   }
   .investment-graph {
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
   .investment {
     display: flex;
@@ -37,6 +39,7 @@
   }
   .i-my-investment {
     width: 80vw;
+    margin: auto;
   }
   .i-my-investment div {
     width: 100%;

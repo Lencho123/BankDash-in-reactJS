@@ -1,0 +1,28 @@
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color:#dff5f6;
+    height: 100vh;
+}
+.sign-up form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 0.5rem;
+}
+.sign-up input{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px lightblue solid;
+}
+.sign-up button{
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: blue;
+    color: white;
+  }

@@ -29,6 +29,7 @@
     width: 80vw;
     overflow-x: hidden;
     gap: 1rem;
+    margin: auto;
   }
   .hmid-card {
     display: flex;
@@ -41,5 +42,6 @@
     flex-direction: column;
     width: 80vw;
     overflow-x: hidden;
+    margin: auto;
   }
 }

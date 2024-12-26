@@ -62,6 +62,7 @@
 @media screen and (max-width: 720px) {
   .security-form {
     width: 80vw;
+    margin: auto;
   }
   .security-submit {
     width: 80vw;

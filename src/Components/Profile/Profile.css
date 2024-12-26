@@ -46,8 +46,9 @@ fieldset input {
     width: 20%;
   }
 
-  fieldset {
+  .profile-form fieldset {
     width: 80vw;
+    margin: auto;
   }
   .profile-submit {
     width: 80vw;

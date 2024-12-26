@@ -8,7 +8,7 @@ function Profile() {
         <div className="profile-form-image">
           <img
             width="100%"
-            style={{ borderRadius: "50%", minWidth: "2rem" }}
+            style={{ borderRadius: "50%", minWidth: "2rem", aspectRatio:'1' }}
             src={profile}
           />
         </div>

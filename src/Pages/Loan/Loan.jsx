@@ -48,11 +48,10 @@ function Loan() {
           }}
         />
       </div>
-      <h3
+      <h3 className="loan-h3"
         style={{
           margin: "0",
           padding: "0",
-          marginBottom: "-1rem",
           marginTop: "1.5rem",
         }}
       >

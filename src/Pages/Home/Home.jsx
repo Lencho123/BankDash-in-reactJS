@@ -18,7 +18,7 @@ function Home() {
         <div style={{ flexBasis: "33%" }}>
           <img
             className="large-screen"
-            style={{ width: "100%" }}
+            style={{ width: "100%"}}
             src={home_card2}
           />
         </div>
@@ -26,7 +26,7 @@ function Home() {
 
       <div className=" small-screen on-small-screen-image" >
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%",margin: "auto"}}
           src={home_card2}
         />
       </div>

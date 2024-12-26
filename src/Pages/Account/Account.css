@@ -7,6 +7,7 @@
   display:flex;
   gap: 1.5rem;
   margin-top: 1.5rem;
+  justify-content: space-evenly;
 
 }
 @media screen and (max-width: 720px) {
@@ -14,6 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80vw;
+    overflow-x: auto;
   }
   .account-section-2{
     display: flex;
