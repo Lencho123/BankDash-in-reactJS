@@ -11,6 +11,12 @@
 .inline-block {
   flex-basis: 33%;
 }
+.investment-graph .one{
+  flex-basis: 50%;
+}
+.investment-graph .two{
+  flex-basis: 50%;
+}
 @media screen and (max-width: 720px) {
   .investment-small-card {
     display: flex;

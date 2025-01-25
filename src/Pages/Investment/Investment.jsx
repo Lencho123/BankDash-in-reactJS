@@ -5,6 +5,8 @@ import { DollarSignIcon, PieChart, Repeat } from "lucide-react";
 import investment_card1 from "../../assets/investment_card1.png";
 import investment_card2 from "../../assets/investment_card2.png";
 import MyInvestment from "../../Components/MyInvestment/MyInvestment";
+import MonthlyRevenue from "../../Components/MonthlyRevanue/MonthlyRevanue";
+import YearlyTotalInvestment from "../../Components/YearlyTotalInvestment/YearlyTotalInvestment";
 function Investment() {
   return (
     <div className="investment">
@@ -55,8 +57,14 @@ function Investment() {
         </div>
       </div>
       <div className="investment-graph">
-        <img src={investment_card1} width="50%" />
-        <img src={investment_card2} width="50%" />
+        {/* <img src={investment_card1} width="50%" /> */}
+        <div className="one">
+          <YearlyTotalInvestment />
+        </div>
+        {/* <img src={investment_card2} width="50%" /> */}
+        <div className="two">
+          <MonthlyRevenue />
+        </div>
       </div>
       <div className="i-my-investment">
         <h3>My Investment</h3>

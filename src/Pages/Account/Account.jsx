@@ -56,7 +56,7 @@ function Account() {
         />
       </div>
       <div className="account-section-2">
-        <div>
+        <div className="account-section-2-div-2">
           <LastTransaction />
         </div>
         <div className="account-section-2-div-1">

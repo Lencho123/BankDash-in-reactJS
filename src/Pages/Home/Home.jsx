@@ -7,6 +7,9 @@ import home_card5 from "../../assets/home_card5.png";
 import QuickTransfer from "../../Components/QuickTransfer/QuickTransfer";
 import MidCard from "../../Components/MidCard/MidCard";
 import { midCardStyle } from "../../Styles/midCardStyle";
+import WeeklyActivityBar from "../../Components/WeeklyActivityBar/WeeklyActivityBar";
+import ExpenseStaticsPie from "../../Components/ExpenseStaticsPie/ExpenseStaticsPie";
+import BalanceHistoryLine from "../../Components/BalanceHistory/BalanceHistoryLine";
 
 function Home() {
   return (
@@ -33,10 +36,12 @@ function Home() {
 
       <div className="home-section-1">
         <div className="himage1">
-          <img width="100%" src={home_card3} />
+          {/* <img width="100%" src={home_card3} /> */}
+          <WeeklyActivityBar/>
         </div>
         <div className="himage2">
-          <img width="100%" src={home_card4} />
+          {/* <img width="100%" src={home_card4} /> */}
+          <ExpenseStaticsPie/>
         </div>
       </div>
       <div
@@ -46,7 +51,8 @@ function Home() {
           <QuickTransfer />
         </div>
         <div style={{ flexBasis: "60%" }}>
-          <img width="100%" src={home_card5} />
+          {/* <img width="100%" src={home_card5} /> */}
+          <BalanceHistoryLine/>
         </div>
       </div>
     </div>

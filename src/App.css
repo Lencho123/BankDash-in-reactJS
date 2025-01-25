@@ -19,6 +19,7 @@
 }
 .routes{
   margin: auto;
+  margin-top: 2rem;
   width: 95%;
 }
 .small-screen{
@@ -48,6 +49,7 @@
 @media screen and (max-width: 720px) {
   .routes{
     margin: auto;
+    margin-top: 1.5rem;
   }
   .mside{
     display: none;

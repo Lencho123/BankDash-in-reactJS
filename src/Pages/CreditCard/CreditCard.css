@@ -10,10 +10,14 @@
 }
 .credit-card-card-list{
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 }
+.credit-card-card-list-img{
+  width: 25vw;
+}
 .credit-card-card-list-lists{
-  flex-basis: 66%;
+  flex-basis: 65%;
 }
 .credit-card-section-2{
   display: flex;
@@ -37,11 +41,12 @@
   .credit-card-card-list{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     margin:auto;
   }
   .credit-card-card-list-img{
-    width: 80vw;
+    width: 60vw;
   }
   .credit-card-card-list-lists{
     display: flex;

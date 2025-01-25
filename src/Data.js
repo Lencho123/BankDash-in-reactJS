@@ -251,4 +251,22 @@ export const loanOverview = [
     button: "",
   },
 ];
-export const authenticator = [{ email: "lencholachisa11@gmail.com", password: "123" }];
+export const authenticator = [
+  { email: "lencholachisa11@gmail.com", password: "123" },
+];
+
+export const weeklyActivity = {
+  labels: ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"],
+  dataset: [
+    {
+      label: "Diposit",
+      data: [480, 350, 320, 480, 160, 395, 400],
+      backGroundColor: "blue",
+    },
+    {
+      label: "Withdraw",
+      data: [240, 120, 270, 380, 250, 250, 340],
+      backGroundColor: "pink",
+    },
+  ],
+};

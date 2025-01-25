@@ -27,8 +27,7 @@ function NavBar() {
             alignItems: "center",
           }}
         >
-          <button  className="menu"
-          onClick={()=>setShowSide(true)}>
+          <button className="menu" onClick={() => setShowSide(true)}>
             <Menu />
           </button>
           <h4>{curPage}</h4>

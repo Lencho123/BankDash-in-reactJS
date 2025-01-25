@@ -7,6 +7,7 @@ import creditcard_card2 from "../../assets/creditcard_card2.png";
 import { CarFront } from "lucide-react";
 import CardList from "../../Components/CardList/CardList";
 import AddNewCardForm from "../../Components/AddNewCardForm/AddNewCardForm";
+import CardExpenseStatistics from "../../Components/CardExpenseStatistics/CardExpenseStatistics";
 
 const cardListData = [
   {
@@ -44,7 +45,8 @@ function CreditCard() {
       </div>
       <div className="credit-card-card-list">
         <div className="credit-card-card-list-img">
-          <img width="100%" src={creditcard_card1} />
+          {/* <img width="100%" src={creditcard_card1} /> */}
+          <CardExpenseStatistics/>
         </div>
 
         <div className="credit-card-card-list-lists">
