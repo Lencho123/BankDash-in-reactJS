@@ -51,6 +51,7 @@ function App() {
               <NavBar />
             </div>
             <div className="main">
+              
               <div className="wraper">
                 <div className={showSide ? "mside show-side" : "mside"}>
                   <button
@@ -62,7 +63,8 @@ function App() {
                   <SideBar />
                 </div>
               </div>
-              <div className="routes">
+              <div className="routes"
+              onClick={()=>setShowSide(false)}>
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/transaction" element={<Transactions />}>

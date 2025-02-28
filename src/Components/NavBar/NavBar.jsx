@@ -3,11 +3,15 @@ import "./NavBar.css";
 import { Bell, Menu, Search, Settings, Wallet } from "lucide-react";
 import profile from "../../assets/profile.png";
 import { SideBarContex } from "../../Context/SideBarProvider";
+import { Link } from "react-router-dom";
+
 
 function NavBar() {
   const value = useContext(SideBarContex);
+  const setCurPage = value.setCurPage;
   const curPage = value.curPage;
   const setShowSide = value.setShowSide;
+ 
   return (
     <div className="navbar">
       <div className="left">
@@ -55,7 +59,15 @@ function NavBar() {
           <Search />
           <input id="search" type="search" placeholder="Search for something" />
         </label>
-        <Settings className="icon" />
+        
+        <Link
+          to="/setting"
+          className={`li ${curPage === "Settings" ? "active" : ""} icon nav-setting`}
+          onClick={() => setCurPage("Settings")}
+        >
+          <Settings />
+        </Link>
+
         <Bell className="icon" />
         <img src={profile} width="25px" />
       </div>
