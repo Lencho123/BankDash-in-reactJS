@@ -17,6 +17,7 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+const x = 4;
 function ExpenseStaticsPie() {
   const data = {
     labels: ["Transfer", "Service", "Others", "Shopping"],
@@ -46,5 +47,5 @@ function ExpenseStaticsPie() {
 
   return <Pie data={data} options={options} />;
 }
-
+// 
 export default ExpenseStaticsPie;
