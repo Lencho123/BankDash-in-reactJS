@@ -20,6 +20,7 @@ import Profile from "./Components/Profile/Profile.jsx";
 import Preference from "./Components/Preference/Preference.jsx";
 import Security from "./Components/Security/Security.jsx";
 import { Delete } from "lucide-react";
+import Footer from "./Components/Footer/Footer.jsx";
 
 function App() {
   const [curPage, setCurPage] = useState("Overview");
@@ -45,6 +46,7 @@ function App() {
               style={{
                 position: "sticky",
                 top: "0",
+                left:"0",
                 zIndex: "1000",
               }}
             >
@@ -62,7 +64,7 @@ function App() {
                   <SideBar />
                 </div>
               </div>
-              <div className="routes">
+              <div onClick={() => setShowSide(false)} className="routes">
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/transaction" element={<Transactions />}>
@@ -85,6 +87,9 @@ function App() {
                   </Route>
                 </Routes>
               </div>
+            </div>
+            <div>
+              <Footer />
             </div>
           </SideBarProvider>
         </div>

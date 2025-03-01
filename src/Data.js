@@ -253,6 +253,7 @@ export const loanOverview = [
 ];
 export const authenticator = [
   { email: "lencholachisa11@gmail.com", password: "123" },
+  { email: "l2@gmail.com", password: "123" },
 ];
 
 export const weeklyActivity = {
