@@ -65,12 +65,7 @@ function App() {
                   <SideBar />
                 </div>
               </div>
-<<<<<<< HEAD
-              <div className="routes"
-              onClick={()=>setShowSide(false)}>
-=======
               <div onClick={() => setShowSide(false)} className="routes">
->>>>>>> temp-branch
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/transaction" element={<Transactions />}>
