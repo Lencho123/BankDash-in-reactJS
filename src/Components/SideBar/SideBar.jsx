@@ -21,7 +21,7 @@ function SideBar() {
   const curPage = value.curPage;
 
   return (
-    <div className={'sidebar'}>
+    <div className={"sidebar"}>
       <ul>
         <Link
           to="/"
