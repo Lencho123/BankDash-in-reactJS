@@ -24,63 +24,63 @@ function SideBar() {
     <div className={"sidebar"}>
       <ul>
         <Link
-          to="/"
+          to="/app/"
           className={`li ${curPage === "Overview" ? "active" : ""}`}
           onClick={() => setCurPage("Overview")}
         >
           <Home /> Dashboard
         </Link>
         <Link
-          to="/transaction"
+          to="/app/transaction"
           className={`li ${curPage === "Transactions" ? "active" : ""}`}
           onClick={() => setCurPage("Transactions")}
         >
           <Repeat /> Transactions
         </Link>
         <Link
-          to="/account"
+          to="/app/account"
           className={`li ${curPage === "Accounts" ? "active" : ""}`}
           onClick={() => setCurPage("Accounts")}
         >
           <UserCircle /> Accounts
         </Link>
         <Link
-          to="/investment"
+          to="/app/investment"
           className={`li ${curPage === "Investments" ? "active" : ""}`}
           onClick={() => setCurPage("Investments")}
         >
           <BarChart /> Investments
         </Link>
         <Link
-          to="/creditcard"
+          to="/app/creditcard"
           className={`li ${curPage === "Credit Cards" ? "active" : ""}`}
           onClick={() => setCurPage("Credit Cards")}
         >
           <CreditCard /> Credit Cards
         </Link>
         <Link
-          to="/loan"
+          to="/app/loan"
           className={`li ${curPage === "Loans" ? "active" : ""}`}
           onClick={() => setCurPage("Loans")}
         >
           <DollarSign /> Loans
         </Link>
         <Link
-          to="/service"
+          to="/app/service"
           className={`li ${curPage === "Services" ? "active" : ""}`}
           onClick={() => setCurPage("Services")}
         >
           <Briefcase /> Services
         </Link>
         <Link
-          to="/myprivilage"
+          to="/app/myprivilage"
           className={`li ${curPage === "My Privilages" ? "active" : ""}`}
           onClick={() => setCurPage("My Privilages")}
         >
           <Star /> My Privilages
         </Link>
         <Link
-          to="/setting"
+          to="/app/setting"
           className={`li ${curPage === "Settings" ? "active" : ""}`}
           onClick={() => setCurPage("Settings")}
         >

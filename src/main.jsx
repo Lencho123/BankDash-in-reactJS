@@ -4,7 +4,5 @@ import { BrowserRouter } from 'react-router-dom'
 import Base from './Base.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
     <Base />
-  </BrowserRouter>
 )

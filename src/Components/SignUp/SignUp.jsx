@@ -17,7 +17,7 @@ function SignUp() {
       confirm: confirm,
     };
     authenticator.push(account);
-    console.log(authenticator)
+    console.log(authenticator);
   }
   return (
     <div className="sign-up">
@@ -57,9 +57,15 @@ function SignUp() {
             value={confirm}
           />
         </label>
-        <Link to={'/login-sinUp'}>
-          <button onClick={()=>createAccount()}>Create</button>
-        </Link>
+        <div style={{display:'flex', justifyContent:'space-between'}}>
+          <Link to={"/login-signUp/"}>
+            <button onClick={() => createAccount()}>Create</button>
+          </Link>
+
+          <Link to="/">
+            <button>Back</button>
+          </Link>
+        </div>
       </form>
     </div>
   );

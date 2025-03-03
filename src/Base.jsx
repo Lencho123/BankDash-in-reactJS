@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 import Landing from "./Pages/Landing/Landing";
 import App from "./App";
 import Login from "./Components/Login/Login";
@@ -10,19 +15,17 @@ function Base() {
   const [login, setLogin] = useState(false);
 
   return (
-    <div>
-      <SideBarProvider
-            login={login}
-            setLogin={setLogin}
-          >
+    <SideBarProvider login={login} setLogin={setLogin}>
+      <Router basename="/BankDash-in-reactJS">
         <Routes>
-          <Route path="/login-sinUp" element={<Landing />} />
+          <Route path="/" element={<Navigate to="/login-signUp/" />} />
+          <Route path="/login-signUp/" element={<Landing />} />
           <Route path="/login/*" element={<Login />} />
-          <Route path="/*" element={<App />} />
-          <Route path="/sign-up/*" element={<SignUp/>}/>
+          <Route path="/app/*" element={login ? <App /> : <Navigate to="/login/" />} />
+          <Route path="/sign-up/*" element={<SignUp />} />
         </Routes>
-      </SideBarProvider>
-    </div>
+      </Router>
+    </SideBarProvider>
   );
 }
 

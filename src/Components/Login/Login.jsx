@@ -55,9 +55,24 @@ function Login() {
             placeholder="****"
           />
         </label>
-        <Link to={"/"}>
-          <button onClick={() => setLogin(youHaveAccount())}>Login</button>
-        </Link>
+        <div style={{display:'flex', justifyContent:'space-between'}}>
+          <Link to={"/app"}>
+            <button onClick={() => setLogin(youHaveAccount())}>Login</button>
+          </Link>
+
+          <Link to="/">
+            <button>Back</button>
+          </Link>
+        </div>
+        {login ? (
+          <></>
+        ) : (
+          <div>
+            <p style={{ color: "red" }}>
+              Unmatch password and email. Please retry!
+            </p>
+          </div>
+        )}
       </form>
     </div>
   );

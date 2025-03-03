@@ -57,7 +57,7 @@ function NavBar() {
           <input id="search" type="search" placeholder="Search for something" />
         </label>
         <Link
-          to="/setting"
+          to="/app/setting"
           className={`li ${curPage === "Settings" ? "active" : ""}`}
           onClick={() => setCurPage("Settings")}
           style={{ marginBottom: "1.5rem" }}
