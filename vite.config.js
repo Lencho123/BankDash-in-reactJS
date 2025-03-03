@@ -4,6 +4,6 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/login-sinUp/",
+  base: "/react-project-fully-deployed-Bankdash",
   // base: "/BankDash-in-reactJS",
 });
